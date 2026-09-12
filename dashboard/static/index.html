@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coursera Video Agent</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="panel">
+    <h1>Coursera Video Agent</h1>
+    <section>
+      <label>Course</label>
+      <p id="course">—</p>
+    </section>
+    <section>
+      <label>Progress</label>
+      <p id="progress">0 / 0 videos</p>
+      <div class="bar"><span id="bar"></span></div>
+    </section>
+    <section>
+      <label>Current</label>
+      <p id="current">—</p>
+      <label>Type</label>
+      <p id="type">—</p>
+      <label>Status</label>
+      <p id="status">STOPPED</p>
+      <label>Elapsed</label>
+      <p id="elapsed">00:00</p>
+      <label>Agent</label>
+      <p id="agent">STOPPED</p>
+    </section>
+    <div class="actions">
+      <button id="continue">CONTINUE</button>
+      <button id="pause">PAUSE</button>
+      <button id="resume">RESUME</button>
+      <button id="stop" class="danger">STOP</button>
+    </div>
+    <section>
+      <label>Event log</label>
+      <ul id="log"></ul>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
